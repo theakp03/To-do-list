@@ -1,0 +1,129 @@
+    :root {
+        --bg: #ffffff;
+        --text: #222;
+        --item-bg: #f8f9fa;
+        --primary: #28a745;
+    }
+
+    body.dark {
+        --bg: #121212;
+        --text: #eee;
+        --item-bg: #1e1e1e;
+        --primary: #4caf50;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    .todo-container {
+        background: var(--bg);
+        padding: 2rem;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .theme-toggle {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .theme-toggle button {
+        background: var(--primary);
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .input-group {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .input-group input {
+        flex: 1;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: var(--item-bg);
+        color: var(--text);
+    }
+
+    .input-group button {
+        padding: 0.75rem 1rem;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        background: var(--item-bg);
+        padding: 0.75rem;
+        margin-bottom: 0.5rem;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: grab;
+    }
+
+    li.completed {
+        text-decoration: line-through;
+        opacity: 0.6;
+    }
+
+    .actions button {
+        margin-left: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .actions .done {
+        color: green;
+    }
+
+    .actions .delete {
+        color: red;
+    }
+
+    @media (max-width: 500px) {
+        .input-group {
+            flex-direction: column;
+        }
+
+        .input-group button {
+            width: 100%;
+        }
+    }
