@@ -19,10 +19,11 @@ A modern, responsive To-Do List web application built using **HTML**, **CSS**, a
 ## 📸 Screenshots
 
 ### ✅ Light Mode
-![Light Mode Screenshot](assets/light-mode.png)
+![Light Mode!][Screenshot 2025-06-04 132155](https://github.com/user-attachments/assets/4283277a-7632-4d71-9ef4-2d2d3acfea01)](assets/light-mode.png)
 
 ### 🌙 Dark Mode
-![Dark Mode Screenshot](assets/dark-mode.png)
+![Dark Mode ][Screenshot 2025-06-04 132143](https://github.com/user-attachments/assets/e04c181a-6056-4585-885b-005818c8f900)
+eenshot](assets/dark-mode.png)
 
 ## 🛠️ Tech Stack
 
